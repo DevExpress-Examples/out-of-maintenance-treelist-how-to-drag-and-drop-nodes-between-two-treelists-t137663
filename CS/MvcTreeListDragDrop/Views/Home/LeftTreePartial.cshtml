@@ -1,0 +1,14 @@
+﻿@Html.DevExpress().TreeList(
+    settings => {
+        settings.Name = "LeftTree";
+        settings.CallbackRouteValues = new { Controller = "Home", Action = "LeftTreePartial" };
+        settings.SettingsEditing.NodeDragDropRouteValues = new { Controller = "Home", Action = "LeftTreePartial" };
+        settings.Columns.Add("Value");
+        settings.Settings.ShowColumnHeaders = false;
+        settings.SettingsBehavior.AutoExpandAllNodes = true;
+        settings.ClientSideEvents.StartDragNode = "MyDragHelper.StartDragNode";
+        settings.ClientSideEvents.EndDragNode = "MyDragHelper.EndDragNode";
+        settings.Init = (s, e) => {
+            MvcTreeListDragDrop.Model.MyProvider.Bind((ASPxTreeList)s, "/node/node[@key='1']");
+        };
+    }).GetHtml()
