@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/MvcTreeListDragDrop/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/MvcTreeListDragDrop/Controllers/HomeController.vb))
+* **[MyDragHelper.js](./CS/MvcTreeListDragDrop/Scripts/MyDragHelper.js) (VB: [MyDragHelper.js](./VB/MvcTreeListDragDrop/Scripts/MyDragHelper.js))**
+* [Index.cshtml](./CS/MvcTreeListDragDrop/Views/Home/Index.cshtml)
+* [LeftTreePartial.cshtml](./CS/MvcTreeListDragDrop/Views/Home/LeftTreePartial.cshtml)
+* [RightTreePartial.cshtml](./CS/MvcTreeListDragDrop/Views/Home/RightTreePartial.cshtml)
+* [TreeListContainerPartial.cshtml](./CS/MvcTreeListDragDrop/Views/Home/TreeListContainerPartial.cshtml)
+<!-- default file list end -->
 # TreeList - How to drag and drop nodes between two treelists
 
 
